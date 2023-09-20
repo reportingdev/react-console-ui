@@ -1,0 +1,41 @@
+{
+  "name": "@reportingdev/npm-package-template",
+  "version": "0.0.1",
+  "description": "This repo is a template for easily creating new npm packages.",
+  "scripts": {
+    "prebuild": "tsc",
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reporting-dev/npm-package-template.git"
+  },
+  "keywords": [],
+  "author": "Braden Ericson (@bradenericson)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reporting-dev/npm-package-template/issues"
+  },
+  "homepage": "https://github.com/reporting-dev/npm-package-template#readme",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "rollup": "^3.28.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.35.0"
+  }
+}
