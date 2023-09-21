@@ -1,2 +1,2 @@
-// index.ts
-export * from './main';
+import './tailwind.css'
+export * from './ConsoleUI/ConsoleUI';

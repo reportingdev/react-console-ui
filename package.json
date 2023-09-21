@@ -1,11 +1,15 @@
 {
-  "name": "@reportingdev/npm-package-template",
+  "name": "@reportingdev/react-console-ui",
   "version": "0.0.1",
-  "description": "This repo is a template for easily creating new npm packages.",
+  "description": "The react-console-ui package offers a simple console UI component for displaying logs in React applications. Designed to improve developer experience, this package provides various types of logs like info, warning, error, and success, along with features like expandable rows for duplicate logs and aesthetically pleasing icons for each log type. All you have to do is pass an array of log objects, and react-console-ui takes care of the rest.",
   "scripts": {
     "prebuild": "tsc",
     "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pre:storybook": "npx tailwindcss build -i src/index.css -o src/tailwind.css --minify",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "storybook build"
   },
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -26,16 +30,32 @@
     "LICENSE"
   ],
   "types": "dist/index.d.ts",
+  "resolutions": {
+    "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
+  },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "typescript": "^5.2.2"
   },
-  "peerDependencies": {
-  },
   "devDependencies": {
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.22.15",
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "^15.2.1",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@types/react": "^18.2.22",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup": "^3.28.1",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-typescript2": "^0.35.0"
+    "rollup-plugin-typescript2": "^0.35.0",
+    "storybook": "^6.5.16",
+    "tailwindcss": "^3.3.3"
   }
 }
