@@ -6,16 +6,6 @@ import {
   XCircleIcon,
 } from '@heroicons/react/24/solid';
 
-export interface Log {
-  type: 'info' | 'warning' | 'error' | 'success';
-  message: string;
-  details: string;
-}
-
-export type ConsoleUIProps = {
-  logs: Log[];
-};
-
 const ConsoleUI: React.FC<ConsoleUIProps> = ({ logs }) => {
   const [expandedRow, setExpandedRow] = useState<number | null>(null);
 

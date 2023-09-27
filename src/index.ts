@@ -1,2 +1,3 @@
 import './tailwind.css'
-export * from './ConsoleUI/ConsoleUI';
+import ConsoleUI from './ConsoleUI/ConsoleUI';
+export default ConsoleUI;

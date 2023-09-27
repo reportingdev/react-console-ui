@@ -1,5 +1,5 @@
 {
-  "name": "@reportingdev/react-console-ui",
+  "name": "react-console-ui",
   "version": "0.0.1",
   "description": "The react-console-ui package offers a simple console UI component for displaying logs in React applications. Designed to improve developer experience, this package provides various types of logs like info, warning, error, and success, along with features like expandable rows for duplicate logs and aesthetically pleasing icons for each log type. All you have to do is pass an array of log objects, and react-console-ui takes care of the rest.",
   "scripts": {
@@ -15,15 +15,36 @@
   "module": "dist/bundle.esm.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/reporting-dev/npm-package-template.git"
+    "url": "git+https://github.com/reporting-dev/react-console-ui.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "console",
+    "logging",
+    "developer-tools",
+    "debug",
+    "log-viewer",
+    "error-handling",
+    "warnings",
+    "info-logs",
+    "ui",
+    "components",
+    "user-interface",
+    "tailwindcss",
+    "frontend",
+    "react-component",
+    "devtools",
+    "diagnostics",
+    "real-time",
+    "monitoring",
+    "terminal"
+  ],
   "author": "Braden Ericson (@bradenericson)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/reporting-dev/npm-package-template/issues"
+    "url": "https://github.com/reporting-dev/react-console-ui/issues"
   },
-  "homepage": "https://github.com/reporting-dev/npm-package-template#readme",
+  "homepage": "https://github.com/reporting-dev/react-console-ui#readme",
   "files": [
     "dist/",
     "README.md",
